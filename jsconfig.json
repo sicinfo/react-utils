@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "System",
+    "moduleResolution": "Node",
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "checkJs": true,
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules", "tmp"]
+}
