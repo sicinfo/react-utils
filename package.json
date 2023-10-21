@@ -1,0 +1,22 @@
+{
+  "name": "sicinfo-reactjs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.d.js",
+  "types": "react-util.d.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sicinfo/react-util.git"
+  },
+  "author": "moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sicinfo/react-util/issues"
+  },
+  "homepage": "https://github.com/sicinfo/react-util#readme",
+  "devDependencies": {
+  }
+}
