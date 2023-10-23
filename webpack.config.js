@@ -18,7 +18,7 @@ module.exports = (
 
   const output = {
     clean,
-    filename: `react_utils.${mode}.js`,
+    filename: `react-utils.${mode}.js`,
     path: path.resolve(__dirname, 'dist')
   };
 
