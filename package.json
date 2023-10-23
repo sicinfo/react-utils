@@ -1,22 +1,29 @@
 {
-  "name": "sicinfo-reactjs",
+  "name": "sicinfo-react-utils",
   "version": "0.1.0",
   "description": "",
-  "main": "index.d.js",
-  "types": "react-util.d.js",
+  "main": "dist/react_utils.production.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "_vscode:prepublish": "nvm exec stable npm run esbuild-base -- --minify",
+    "_esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+    "_esbuild": "npm run esbuild-base -- --sourcemap",
+    "_esbuild-watch": "nvm exec stable npm run esbuild-base -- --sourcemap --watch",
+    "_test-compile": "nvm exec stable tsc -p ./",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sicinfo/react-util.git"
+    "url": "git+https://github.com/sicinfo/react-utils.git"
   },
   "author": "moreira",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sicinfo/react-util/issues"
+    "url": "https://github.com/sicinfo/react-utils/issues"
   },
-  "homepage": "https://github.com/sicinfo/react-util#readme",
+  "homepage": "https://github.com/sicinfo/react-utils#readme",
   "devDependencies": {
+    "esbuild": "^0.19.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }

@@ -8,7 +8,10 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
     "checkJs": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "dist/*": ["./dist/*"]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [".git", "node_modules"]
 }

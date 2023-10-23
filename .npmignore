@@ -1,1 +1,6 @@
 **/jsconfig.json
+webpack.config.js
+**/*.d.js
+**/*ignore
+/src
+**/*.code-workspace
