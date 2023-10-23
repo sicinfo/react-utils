@@ -1,0 +1,1 @@
+var e={d:(r,t)=>{for(var o in t)e.o(t,o)&&!e.o(r,o)&&Object.defineProperty(r,o,{enumerable:!0,get:t[o]})},o:(e,r)=>Object.prototype.hasOwnProperty.call(e,r)},r={};e.d(r,{Z:()=>t});const t={WrapPromise:e=>{let r,t=0;const o=e.then((e=>{t=1,r=e}),(e=>{t=2,r=e}));return{get read(){if(1==t)return r;throw t?r:o}}}};var o=r.Z;export{o as default};

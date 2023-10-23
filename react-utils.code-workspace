@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "react-utils",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "src"
+		},
+		{
+			"name": "dist",
+			"path": "dist"
+		}
+	],
+	"settings": {}
+}

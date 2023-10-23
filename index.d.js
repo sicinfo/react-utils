@@ -1,16 +1,12 @@
 
-/*
- * @typedef {React.createElement} ReactCreateElement
- * @typedef {React.useState} ReactUseState
- * @typedef {React.Suspense} ReactSuspense
- * @typedef {React.lazy} ReactLazy
- */
-
-/*
- * @typedef { ReactDOM & {createRoot:ReactCreateRoot}}  ReactDom
- * @typedef {(a:any) => ({render: (a:React.ReactNode) => void})} ReactCreateRoot
- */
-
 /**
- * @typedef {(p:Promise<any>)=>Record<'read',Promise<any>>} WrapPromise
+ * @template T 
+ * @typedef {Promise<T>} WrapPromiseArgument<T>
+ */ /**
+ * @template T 
+ * @typedef {WrapPromiseArgument<T>} WrapPromiseResponse<T>
+ */ /**
+ * @template T
+ * @typedef WrapPromise<T>
+ * @property {WrapPromiseResponse<T>} read
  */
